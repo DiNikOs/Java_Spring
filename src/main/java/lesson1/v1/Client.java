@@ -10,9 +10,5 @@ public class Client {
         ApplicationContext context = new ClassPathXmlApplicationContext("appContext.xml");
         Camera camera = context.getBean("camera", Camera.class);
         camera.doPhotograph();
-
-//        CameraRoll cameraRoll = new ColorCameraRoll();
-//        Camera4 camera = new Camera4();
-//        camera.setCameraRoll(cameraRoll);
     }
 }
